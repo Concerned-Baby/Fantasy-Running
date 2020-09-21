@@ -1,5 +1,7 @@
+import scrape
+
 def main():
-  print("started")
+  scrape.work()
   
 if __name__ == "__main__":
     main()
