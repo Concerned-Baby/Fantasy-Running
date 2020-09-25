@@ -1,7 +1,7 @@
-import scrape
+import client
 
 def main():
-  scrape.work()
+  client.startClient()
   
 if __name__ == "__main__":
     main()
