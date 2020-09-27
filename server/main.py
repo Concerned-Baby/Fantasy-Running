@@ -1,11 +1,12 @@
 import database
 import server
+import logwriter
 """
 add log
 """
 
 def main():
-	print("started")
+	logwriter.writeServer("program started")
 	database.start()
 	server.startServer()
 

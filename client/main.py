@@ -1,7 +1,9 @@
 import client
+import logwriter
 
 def main():
-  client.startClient()
+	logwriter.writeClient("program started")
+	client.startClient()
   
 if __name__ == "__main__":
     main()
