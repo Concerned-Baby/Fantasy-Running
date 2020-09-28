@@ -1,4 +1,5 @@
 import mysql.connector
+import logwriter
 
 def start():
 	"""
@@ -9,5 +10,4 @@ def start():
 		)
 	print(db)
 	"""
-	print("no errors")
-	#ahhhhhhhhhh why the fuck do you need credit cards if its free, fuck off oracle
+	logwriter.writeServer("Database Started")

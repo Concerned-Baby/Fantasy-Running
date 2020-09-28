@@ -1,4 +1,5 @@
 import socket
+import logwriter
 def startServer():
 	ss = socket.socket()
 	host = socket.gethostname()
@@ -12,4 +13,5 @@ def startServer():
 		client, address = ss.accept()
 		print("connection")
 		client.send(('thank you for connecting'.encode('utf-8')))
+		logwriter.writeServer("Client Accepted: " + address)
 		client.close()
