@@ -5,8 +5,8 @@ def start():
 	"""
 	db = mysql.connector.connect(
 		host="localhost",
-		user="spinkr",
-		password="hi"
+		user="skywa",
+		password="spinkr"
 		)
 	print(db)
 	"""
